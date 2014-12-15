@@ -14,6 +14,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var window: NSWindow!
     
     @IBOutlet weak var statusMenu: NSMenu!
+    @IBOutlet weak var subItemLabel: NSMenuItem!
     
     let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1)
     
@@ -34,33 +35,36 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBAction func menuClicked(sender: NSMenuItem) {
         
         let task = NSTask()
-        
+        var stmenu = subItemLabel.title
         task.launchPath = ("/usr/bin/defaults")
         
-        if (statusItem.title == "Hide Files")  {
-            sender.state = NSOffState
-            statusItem.title = "Show Hidden Files"
+        if (subItemLabel.title == "Hide Files")  {
+            //sender.state = NSOffState
+            statusItem.title = ""
             
             task.arguments = ["write", "com.apple.finder", "AppleShowAllFiles", "NO"]
         }
         else {
-            sender.state = NSOffState
+            //sender.state = NSOffState
             statusItem.title = "Hide Files"
+            subItemLabel.title = "Hide Files"
             task.arguments = ["write", "com.apple.finder", "AppleShowAllFiles", "YES"]
         }
-
         
-//        if (sender.state == NSOnState)  {
+
+//        if (statusItem.title == "Hide Files")  {
 //            sender.state = NSOffState
+//            statusItem.title = ""
 //            
 //            task.arguments = ["write", "com.apple.finder", "AppleShowAllFiles", "NO"]
 //        }
 //        else {
 //            sender.state = NSOffState
+//            statusItem.title = "Hide Files"
 //            task.arguments = ["write", "com.apple.finder", "AppleShowAllFiles", "YES"]
 //        }
-        
-        task.launch()
+
+         task.launch()
         task.waitUntilExit()
         
         let killtask = NSTask()
@@ -69,6 +73,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         killtask.launch()
         
     }
-        
-}
 
+}
+        

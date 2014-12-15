@@ -15,6 +15,7 @@
             <connections>
                 <outlet property="menuClicked" destination="jAh-Cn-vN1" id="xcz-fj-rLA"/>
                 <outlet property="statusMenu" destination="Phx-gU-W4e" id="jaM-PT-O03"/>
+                <outlet property="subItemLabel" destination="jAh-Cn-vN1" id="MVq-pz-a4r"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
@@ -23,7 +24,7 @@
                 <menuItem title="Show Hidden Files" id="jAh-Cn-vN1">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="menuClicked:" target="Voe-Tx-rLC" id="Zwn-Wh-X1O"/>
+                        <action selector="menuClicked:" target="Voe-Tx-rLC" id="DRc-yp-jnn"/>
                     </connections>
                 </menuItem>
             </items>
