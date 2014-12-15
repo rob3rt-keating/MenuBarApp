@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>74514CC8-150D-4878-BD8E-EC7CCF646BE9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MenuBarApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6B4F2539C8FC74CB9EA1C7FF650830C805B15925</key>
+		<string>https://github.com/rob3rt-keating/MenuBarApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MenuBarApp.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6B4F2539C8FC74CB9EA1C7FF650830C805B15925</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/rob3rt-keating/MenuBarApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6B4F2539C8FC74CB9EA1C7FF650830C805B15925</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6B4F2539C8FC74CB9EA1C7FF650830C805B15925</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MenuBarApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>
